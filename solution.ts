@@ -42,7 +42,7 @@ const filterByRating = (items: RatedItem[]): RatedItem[] => {
 type User = { id: number; name: string; email: string; isActive: boolean };
 
 const filterActiveUsers = (users: User[]): User[] => {
-  return users.filter(user => user.isActive === true);
+  return users.filter(user => user.isActive);
 };
 
 interface Book {
