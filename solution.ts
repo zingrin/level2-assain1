@@ -55,3 +55,19 @@ interface Book {
 const printBookDetails = (book: Book): string => {
   return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? 'Yes' : 'No'}`;
 };
+
+
+const getUniqueValues = (arr1: (string | number)[], arr2: (string | number)[]): (string | number)[] => {
+  const result: (string | number)[] = [];
+  for (const item of arr1) {
+    if (!result.includes(item)) {
+      result.push(item);
+    }
+  }
+  for (const item of arr2) {
+    if (!result.includes(item)) {
+      result.push(item);
+    }
+  }
+  return result;
+};
