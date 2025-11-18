@@ -7,3 +7,11 @@ const formatValue = (value: string | number | boolean): string | number | boolea
   }
   return !value;
 };
+
+
+const getLength = (value: string | any[]): number => {
+  if (typeof value === 'string') {
+    return value.length;
+  }
+  return value.length;
+};
